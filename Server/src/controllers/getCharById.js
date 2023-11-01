@@ -9,7 +9,7 @@ const getCharById = async(req , res) =>{
         const {name,type,frameType,desc,race,archetype,card_sets, card_images} = response.data;
 
         if(name){
-            const character = {
+            const deck = {
                 id,
                 name,
                 type,
@@ -20,7 +20,7 @@ const getCharById = async(req , res) =>{
                 card_sets,
                 card_images
             };
-            return res.status(200).json(character);
+            return res.status(200).json(deck);
         }
 
 
